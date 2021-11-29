@@ -1,7 +1,7 @@
 
 #!/usr/bin/env bash
 
-echo " -------------------- Applying macOS settings... -----------------------"
+echo "Applying macOS settings."
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
@@ -19,7 +19,7 @@ chflags nohidden ~/Library
 sudo chflags nohidden /Volumes
 
 # Show hidden files
-# defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
@@ -48,12 +48,12 @@ touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 sudo softwareupdate -ai
 rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
-#Store screenshots in subfolder on desktop
-# mkdir ~/Desktop/Screenshots
-# defaults write com.apple.screencapture location ~/Desktop/Screenshots
+# Store screenshots in subfolder on desktop
+mkdir ~/Desktop/Screenshots
+defaults write com.apple.screencapture location ~/Desktop/Screenshots
 
 # Keep Mac from writing .DS_Store files to network drives.
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 echo "Reboot to apply KeyRepeat settings."
-echo " ------------------ DONE Applying macOS settings... --------------------"
+echo "DONE Applying macOS settings."

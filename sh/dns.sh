@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo killall -HUP mDNSResponder
+sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder

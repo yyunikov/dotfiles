@@ -12,7 +12,7 @@ usage()
     echo "Usage:"
     echo "  "`basename $0`" <repo_url>"
     echo "Example:"
-    echo "  "`basename $0`" git@github.com:max-lobur/dotfiles.git"
+    echo "  "`basename $0`" git@github.com:yyunikov/dotfiles.git"
     exit 1
 }
 [[ "$#" -ne 1 ]] && usage;

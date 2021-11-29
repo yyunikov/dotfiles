@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo " --------------------------- Configuring git --------------------------- "
+echo "Configuring git."
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.name "$FULL_NAME"
 git config --global user.email "${EM}"
@@ -8,8 +8,6 @@ git config --global core.editor ${EDITOR}
 git config --global core.filemode true
 git config --global color.ui true
 git config --global push.default simple
-git config --global pull.ff only
-git config --global pull.rebase true
 git config --global fetch.prune true
 git config --global diff.colorMoved zebra
 git config --global rebase.autostash true
@@ -28,4 +26,4 @@ fi
 # check
 echo "Git settings:"
 git config --list | tee
-echo " ------------------------- DONE Configuring git ------------------------ "
+echo "Done configuring git."

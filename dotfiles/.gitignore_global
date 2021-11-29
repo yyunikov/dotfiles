@@ -4,5 +4,3 @@
 .DS_*
 .terraform
 *.tfstate*
-
-session-manager-plugin.deb

@@ -8,7 +8,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export ZSH=$HOME/.oh-my-zsh
-#plugins=(git docker kubectl)
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -33,6 +32,9 @@ eval "$(direnv hook zsh)"
 # pyenv
 eval "$(pyenv init --path)"
 
+# rbenv
+eval "$(rbenv init - zsh)"
+
 export HISTSIZE=10000  # how many lines of history to keep in memory
 export SAVEHIST=100000  # how many lines to keep in the history file
 
@@ -48,3 +50,6 @@ autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 source ~/.bash-my-aws/bash_completion.sh
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
