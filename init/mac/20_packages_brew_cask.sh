@@ -2,7 +2,7 @@
 
 echo "Installing homebrew cask packages."
 
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 brew install 1password
 #brew install avibrazil-rdm  # hack mac screen resolution
@@ -12,7 +12,7 @@ brew install balenaetcher
 brew install brave-browser
 brew install caffeine
 brew install clipy
-brew install daisydisk # analyzing disk space
+# brew install daisydisk # analyzing disk space, requires license
 brew install docker
 # brew install dropbox
 brew install notion

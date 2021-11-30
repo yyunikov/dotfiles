@@ -15,14 +15,24 @@ Based on https://github.com/max-lobur/dotfiles.
 The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 
 ## Mac Setup
+
+### Automated
 1. Clone it / Fork it to `$HOME/git` directory
 1. Update [vars.sh](./vars.sh)
 1. Review the [init](./init) scripts, enable/disable stuff
 1. Run `./init.sh`
 
-## Manual Steps (not automated)
+### Manual Steps (not automated)
 1. Remove all default Apple apps from Dock
 1. Create Apple folder in Launchpad, add all default Apple apps to it
+1. Set wallpaper (`img/wallpaper 4k.jpg`)
+1. System Preferences -> Keyboard -> Shortcuts -> Function Keys and add:
+	1. "PyCharm"
+	1. "Intellij IDEA"
+	1. "RubyMine"
+1. Setup Dock
+
+![dock](./img/dock.png)
 
 ## Troubleshooting
 All scripts are idempotent - hack & rerun until it works.
