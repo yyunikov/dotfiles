@@ -6,9 +6,11 @@ brew tap caskroom/cask
 
 brew install 1password
 #brew install avibrazil-rdm  # hack mac screen resolution
+brew install alfred
 brew install appcleaner
 brew install balenaetcher
 brew install brave-browser
+brew install caffeine
 brew install clipy
 brew install daisydisk # analyzing disk space
 brew install docker
