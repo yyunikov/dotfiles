@@ -15,10 +15,14 @@ Based on https://github.com/max-lobur/dotfiles.
 The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 
 ## Mac Setup
-1. Clone it / Fork it
-2. Update [vars.sh](./vars.sh)
-3. Review the [init](./init) scripts, enable/disable stuff
-4. Run `./init.sh`
+1. Clone it / Fork it to `$HOME/git` directory
+1. Update [vars.sh](./vars.sh)
+1. Review the [init](./init) scripts, enable/disable stuff
+1. Run `./init.sh`
+
+## Manual Steps (not automated)
+1. Remove all default Apple apps from Dock
+1. Create Apple folder in Launchpad, add all default Apple apps to it
 
 ## Troubleshooting
 All scripts are idempotent - hack & rerun until it works.
