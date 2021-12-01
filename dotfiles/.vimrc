@@ -1,1 +1,3 @@
-set mouse-=a 
+set mouse-=a
+set nocompatible
+set backspace=2

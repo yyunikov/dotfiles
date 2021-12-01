@@ -31,6 +31,7 @@ The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
 	1. "Intellij IDEA"
 	1. "RubyMine"
 1. Setup Dock
+1. Setup Input Sources
 
 ![dock](./img/dock.png)
 

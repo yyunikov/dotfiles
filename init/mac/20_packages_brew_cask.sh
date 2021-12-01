@@ -8,6 +8,7 @@ brew install 1password
 #brew install avibrazil-rdm  # hack mac screen resolution
 brew install alfred
 brew install appcleaner
+brew install authy
 brew install balenaetcher
 brew install brave-browser
 brew install caffeine
