@@ -6,8 +6,8 @@ echo "Installing apps from cURL."
 curl -s "https://get.sdkman.io?rcupdate=false" | bash
 
 download_and_install_dmg() {
-	curl -s -L "$1" --output tmp/$2.dmg
-	sudo hdiutil attach tmp/$2.dmg
+	# curl -s -L "$1" --output tmp/$2.dmg
+	# sudo hdiutil attach tmp/$2.dmg
 	# installer doesn't work since can't easily find out Volume name
 	# will need to detach manually in the meantime
 
