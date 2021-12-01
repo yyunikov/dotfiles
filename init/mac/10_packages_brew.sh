@@ -21,6 +21,8 @@ brew install direnv # load and unload environment variables depending on the cur
 # brew install exiftool # Perl lib for reading and writing EXIF metadata
 # brew install flatbuffers # Serialization library for C++, supporting Java, C#, and Go
 brew install git
+brew install git-gui
+brew install gh
 brew install grpcurl
 # GNU internationalization (i18n) and localization (l10n) library
 brew install --force gettext # envsubst
@@ -67,6 +69,7 @@ brew install watch
 brew install wget
 brew install youtube-dl && brew install ffmpeg
 brew install zsh
+brew install zsh-syntax-highlighting
 brew install z # Tracks most-used directories to make cd smarter
 
 echo "DONE Installing homebrew packages."

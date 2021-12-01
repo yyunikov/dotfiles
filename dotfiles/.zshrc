@@ -17,6 +17,9 @@ export PATH=$PATH:$HOME/git/dotfiles/sh
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 source $ZSH/oh-my-zsh.sh
 
+# zsh syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # No exit on ctrl+d
 set -o ignoreeof
 

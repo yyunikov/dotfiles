@@ -33,6 +33,7 @@ brew install osxfuse && brew install sshfs # file handling capabilities via thir
 brew install pycharm # pycharm-ce for community edition
 brew install rubymine
 brew install slack
+brew install sublime-text
 brew install rectangle # window management app https://github.com/rxhanson/Rectangle
 brew install the-unarchiver
 brew install telegram
