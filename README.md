@@ -12,11 +12,12 @@ Collection of files for mac setup and useful scripts. Thanks to [@max-lobur](htt
 Based on https://github.com/max-lobur/dotfiles.
 
 ![iterm2](./img/iterm2.png)
-The above color theme is [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
+The above color theme is [Cobalt Neon](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Cobalt%20Neon.itermcolors)
 
 ## Mac Setup
 
 ### Automated
+1. Make sure to sign in with Apple ID
 1. Clone it / Fork it to `$HOME/git` directory
 1. Update [vars.sh](./vars.sh)
 1. Review the [init](./init) scripts, enable/disable stuff
