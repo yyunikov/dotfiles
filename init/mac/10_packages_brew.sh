@@ -44,6 +44,7 @@ brew install kubernetes-helm
 brew install kubectx
 brew install txn2/tap/kubefwd
 # brew install mc # Input method for Bopomofo (Phonetic Symbols of Mandarin Chinese)
+brew install maven
 brew install mas
 brew install nmap
 brew install openssl

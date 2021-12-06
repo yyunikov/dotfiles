@@ -20,6 +20,8 @@ mkdir tmp
 
 # Postico 2
 download_and_install_dmg https://releases.eggerapps.at/postico2/download postico
+# Docker for Mac
+download_and_install_dmg https://desktop.docker.com/mac/main/amd64/Docker.dmg
 
 # remove temp dir
 rm -rf tmp

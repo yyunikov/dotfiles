@@ -23,7 +23,7 @@ The above color theme is [Cobalt Neon](https://raw.githubusercontent.com/mbadola
 1. Review the [init](./init) scripts, enable/disable stuff
 1. Run `./init.sh`
 
-### Manual Steps (not automated)
+### Manual Steps
 1. Remove all default Apple apps from Dock
 1. Create Apple folder in Launchpad, add all default Apple apps to it
 1. Set wallpaper (`img/wallpaper 4k.jpg`)
