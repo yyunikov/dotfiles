@@ -45,10 +45,12 @@ brew install kubectx
 brew install txn2/tap/kubefwd
 # brew install mc # Input method for Bopomofo (Phonetic Symbols of Mandarin Chinese)
 brew install maven
+brew install micro
 brew install mas
 brew install nmap
 brew install openssl
 # brew install packer # Tool for creating identical machine images for multiple platforms
+brew install poetry
 brew install postgresql
 brew install protobuf
 # brew install perl
