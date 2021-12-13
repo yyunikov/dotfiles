@@ -22,6 +22,7 @@ brew install direnv # load and unload environment variables depending on the cur
 # brew install flatbuffers # Serialization library for C++, supporting Java, C#, and Go
 brew install git
 brew install git-gui
+brew install git-delta
 brew install gh
 brew install grpcurl
 # GNU internationalization (i18n) and localization (l10n) library
