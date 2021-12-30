@@ -8,6 +8,7 @@ if ! command -v brew 2>/dev/null; then
 fi
 brew doctor
 
+brew install asciinema
 brew install awscli@2
 brew install awsume
 brew install aws-rotate-key
@@ -49,6 +50,7 @@ brew install maven
 brew install micro
 brew install mas
 brew install nmap
+brew install nvm ; mkdir $HOME/.nvm
 brew install openssl
 # brew install packer # Tool for creating identical machine images for multiple platforms
 brew install poetry
