@@ -16,6 +16,13 @@ The above color theme is [Cobalt Neon](https://raw.githubusercontent.com/mbadola
 
 ## Mac Setup
 
+### Prerequisites
+1. Install Homebrew https://brew.sh
+1. Install GPG `brew install gpg`
+1. Add existing or generate SSH key in `~/.ssh` (for GitHub see [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+1. Import existing GPG key with `gpg --import key.asc` or create new one
+1. Run `gpg --list-secret-keys` to get your `GPG_KEY` for `vars.sh`
+
 ### Automated
 1. Make sure to sign in with Apple ID
 1. Clone it / Fork it to `$HOME/git` directory
