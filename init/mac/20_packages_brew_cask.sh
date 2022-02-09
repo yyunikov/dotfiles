@@ -26,7 +26,7 @@ brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac"
 brew install intellij-idea-ce # intellij-idea for paid edition
 brew install iterm2
 brew install keybase
-brew install meetingbar # meetings in the os bar
+# brew install meetingbar # meetings in the os bar
 brew install ngrok
 #brew install openoffice
 brew install osxfuse && brew install sshfs # file handling capabilities via third-party file systems
@@ -34,7 +34,7 @@ brew install pycharm-ce # pycharm for paid edition
 # brew install rubymine # no community edition
 brew install slack
 brew install sublime-text
-brew install rectangle # window management app https://github.com/rxhanson/Rectangle
+# brew install rectangle # window management app https://github.com/rxhanson/Rectangle
 brew install the-unarchiver
 brew install telegram
 #brew install tor-browser
@@ -43,7 +43,7 @@ brew install telegram
 #brew install virtualbox
 #brew install virtualbox-extension-pack
 brew install visual-studio-code
-#brew install vlc
+brew install vlc
 #brew install yujitach-menumeters
 brew install zoomus
 #cask install sidestep # Securing public wifi
