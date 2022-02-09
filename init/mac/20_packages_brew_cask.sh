@@ -23,14 +23,14 @@ brew install google-chrome
 brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 # small collection of dialog programs that allow GnuPG to read passphrases and PIN numbers in a secure manner
 brew install pinentry-mac && echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-brew install intellij-idea # intellij-idea-ce for community edition
+brew install intellij-idea-ce # intellij-idea for paid edition
 brew install iterm2
 brew install keybase
 brew install meetingbar # meetings in the os bar
 brew install ngrok
 #brew install openoffice
 brew install osxfuse && brew install sshfs # file handling capabilities via third-party file systems
-brew install pycharm # pycharm-ce for community edition
+brew install pycharm-ce # pycharm for paid edition
 brew install rubymine
 brew install slack
 brew install sublime-text
