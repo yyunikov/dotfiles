@@ -18,7 +18,7 @@ brew install docker
 # brew install dropbox
 brew install notion
 # brew install gitup
-brew install goland
+# brew install goland # no community edition
 brew install google-chrome
 brew install gpg-suite && sudo rm -rf /Library/Mail/Bundles/GPGMail.mailbundle
 # small collection of dialog programs that allow GnuPG to read passphrases and PIN numbers in a secure manner
@@ -31,7 +31,7 @@ brew install ngrok
 #brew install openoffice
 brew install osxfuse && brew install sshfs # file handling capabilities via third-party file systems
 brew install pycharm-ce # pycharm for paid edition
-brew install rubymine
+# brew install rubymine # no community edition
 brew install slack
 brew install sublime-text
 brew install rectangle # window management app https://github.com/rxhanson/Rectangle
