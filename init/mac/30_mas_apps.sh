@@ -2,6 +2,6 @@
 
 echo "Installing apps from the App Store."
 
-mas install 540348655 # Monosnap
+mas install $(mas search Monosnap | awk 'NR==1{print $1}')
 
 echo "DONE Installing homebrew cask packages."

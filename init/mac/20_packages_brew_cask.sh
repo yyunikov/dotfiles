@@ -9,7 +9,7 @@ brew install 1password
 brew install alfred
 brew install appcleaner
 brew install authy
-brew install balenaetcher
+# brew install balenaetcher
 brew install brave-browser
 brew install caffeine
 brew install clipy

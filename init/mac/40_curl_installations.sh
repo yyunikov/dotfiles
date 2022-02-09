@@ -6,8 +6,8 @@ echo "Installing apps from cURL."
 curl -s "https://get.sdkman.io?rcupdate=false" | bash
 
 download_and_install_dmg() {
-	# curl -s -L "$1" --output tmp/$2.dmg
-	# sudo hdiutil attach tmp/$2.dmg
+	curl -s -L "$1" --output tmp/$2.dmg
+	sudo hdiutil attach tmp/$2.dmg
 	# installer doesn't work since can't easily find out Volume name
 	# will need to detach manually in the meantime
 
@@ -21,7 +21,7 @@ mkdir tmp
 # Postico 2
 download_and_install_dmg https://releases.eggerapps.at/postico2/download postico
 # Docker for Mac
-download_and_install_dmg https://desktop.docker.com/mac/main/amd64/Docker.dmg
+download_and_install_dmg https://desktop.docker.com/mac/main/amd64/Docker.dmg docker
 
 # remove temp dir
 rm -rf tmp

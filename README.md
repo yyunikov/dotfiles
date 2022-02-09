@@ -40,7 +40,6 @@ The above color theme is [Cobalt Neon](https://raw.githubusercontent.com/mbadola
 	1. "RubyMine"
 	1. "GoLand"
 1. Setup Input Sources
-1. Setup [GitHub SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 1. Authenticate in all apps
 1. iTerm Configuration
 	1. Launch iTerm and type `p10k configure` for configuration, see [this gist](https://gist.github.com/kevin-smets/8568070) for theme
