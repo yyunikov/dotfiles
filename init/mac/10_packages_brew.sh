@@ -32,6 +32,7 @@ brew link --force gettext
 # brew install gnu-tar # GNU version of the tar archiving utility
 brew install gpg
 # brew install gcc # GNU compiler collection
+brew install go
 brew install goenv
 brew install htop-osx # improved top
 brew install hstr
