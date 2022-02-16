@@ -28,13 +28,9 @@ git config --global delta.decorations.hunk-header-style "file line-number syntax
 
 git config --global alias.br "! git for-each-ref --sort='authordate' --format='%(refname)%09%(authordate)' refs/heads | sed -e 's-refs/heads/--' | tail"
 
-
-### MAC
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    git config --global gpg.program gpg
-    git config --global user.signingkey ${GPG_KEY}
-    git config --global commit.gpgSign true
-fi
+git config --global gpg.program gpg
+git config --global user.signingkey ${GPG_KEY}
+git config --global commit.gpgSign true
 
 # check
 echo "Git settings:"

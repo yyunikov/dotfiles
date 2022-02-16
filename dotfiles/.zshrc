@@ -27,7 +27,11 @@ set -o ignoreeof
 export HISTFILE=~/.zsh_history
 export HSTR_CONFIG=prompt-bottom,keywords-matching,raw-history-view
 export HSTR_PROMPT="bck-i-search: "
+
 bindkey -s "\C-r" "\eqhstr\n"
+
+# gpg
+export GPG_TTY=$(tty)
 
 # direnv
 eval "$(direnv hook zsh)"
