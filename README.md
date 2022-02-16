@@ -6,7 +6,7 @@
  \__,_|\___/ \__|_| |_|_|\___||___/
 
 ```
-test
+tes
 
 Collection of files for mac setup and useful scripts. Thanks to [@max-lobur](https://github.com/max-lobur).
 
