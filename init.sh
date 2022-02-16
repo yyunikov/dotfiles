@@ -5,9 +5,9 @@ echo "Started initialization process."
 source ./vars.sh
 
 echo "Installing mac scripts:"
-#for f in $(ls ./init/mac/); do
-#    bash ./init/mac/${f}
-#done
+for f in $(ls ./init/mac/); do
+    bash ./init/mac/${f}
+done
 echo "DONE Installing mac scripts"
 
 echo "Installing dotfiles:"
