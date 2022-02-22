@@ -32,6 +32,7 @@ brew install ngrok
 brew install osxfuse && brew install sshfs # file handling capabilities via third-party file systems
 brew install pycharm-ce # pycharm for paid edition
 # brew install rubymine # no community edition
+brew install signal
 brew install slack
 brew install sublime-text
 # brew install rectangle # window management app https://github.com/rxhanson/Rectangle
