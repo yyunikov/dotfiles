@@ -6,7 +6,8 @@
     "workbench.statusBar.visible": false,
     "workbench.statusBar.feedback.visible": false,
     "workbench.activityBar.visible": false,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "explorer.openEditors.visible": 0,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -23,7 +24,7 @@
     "editor.scrollBeyondLastLine": false,
     "window.title": "${rootName}",
     "editor.suggestSelection": "recentlyUsedByPrefix",
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Visual Studio Dark",
     "python.autoComplete.addBrackets": true,
     "workbench.iconTheme": "material-icon-theme",
     "terraform.format": {
@@ -43,4 +44,7 @@
       "window.zoomLevel": 1,
       "terminal.integrated.copyOnSelection": true,
       "python.analysis.completeFunctionParens": true,
+      "workbench.startupEditor": "none",
+      "editor.rename.enablePreview": false,
+      "workbench.editor.enablePreview": false,
 }
