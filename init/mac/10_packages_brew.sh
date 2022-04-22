@@ -41,6 +41,7 @@ brew install hstr
 brew install python-yq # Command-line YAML and XML processor that wraps jq
 brew install --HEAD jq
 brew install hub
+brew install fzf
 brew install kafkacat
 brew install kubernetes-cli
 brew install kubernetes-helm

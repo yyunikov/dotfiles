@@ -57,6 +57,68 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
+# docker shortcuts
+drun() {
+  export FZF_DEFAULT_OPTS='--height 90% --reverse --border'
+  local image=$(docker images --format '{{.Repository}}:{{.Tag}}' | fzf-tmux --reverse --multi)
+  if [[ $image != '' ]]; then
+    echo -e "\n  \033[1mDocker image:\033[0m" $image
+    read -e -p $'  \e[1mOptions: \e[0m' -i "-it --rm" options
+
+    printf "  \033[1mChoose the command: \033[0m"
+    local cmd=$(echo -e "/bin/bash\nsh" | fzf-tmux --reverse --multi)
+    if [[ $cmd == '' ]]; then
+        read -e -p $'  \e[1mCustom command: \e[0m' cmd
+    fi
+    echo -e "  \033[1mCommand: \033[0m" $cmd
+
+    export FZF_DEFAULT_COMMAND='find ./ -type d -maxdepth 1 -exec basename {} \;'
+    printf "  \033[1mChoose the volume: \033[0m"
+    local volume=$(fzf-tmux --reverse --multi)
+    local curDir=${PWD##*/}
+    if [[ $volume == '.' ]]; then
+        echo -e "  \033[1mVolume: \033[0m" $volume
+        volume="`pwd`:/$curDir -w /$curDir"
+    else
+        echo -e "  \033[1mVolume: \033[0m" $volume
+        volume="`pwd`/$volume:/$volume -w /$volume"
+    fi
+
+    export FZF_DEFAULT_COMMAND=""
+    export FZF_DEFAULT_OPTS=""
+
+    history -s runc
+    history -s docker run $options -v $volume $image $cmd
+    echo ''
+    docker run $options -v $volume $image $cmd
+  fi
+}
+
+dgrep() {
+   docker ps | grep "$1"
+}
+
+dlog() {
+  docker ps  | sed '1d'| fzf -m --preview-window=down:50% --preview="docker logs {1}" | awk '{print $1}' | xargs docker logs
+}
+
+dkill() {
+  docker ps | sed '1d' | fzf -m --preview-window=down:50% --preview="docker logs {1}" | awk '{print $1}' | xargs docker kill
+}
+
+dlogf() {
+  docker ps | sed '1d' | fzf -m --preview-window=down:50% --preview="docker logs {1}" | awk '{print $1}' | xargs docker logs -f
+}
+
+dlogaf() {
+  docker ps -a | sed  '1d' | fzf -m --preview-window=down:50% --preview="docker logs {1}" | awk '{print $1}' | xargs docker logs
+}
+
+dexec() {
+	container_id=$(docker ps | sed '1d' | fzf -m --preview-window=down:50% --preview="docker logs {1}" | awk '{print $1}')
+	 docker exec -it $container_id sh
+}
+
 # Bash My AWS
 export PATH="$PATH:$HOME/.bash-my-aws/bin"
 source ~/.bash-my-aws/aliases
