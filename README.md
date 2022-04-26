@@ -45,6 +45,7 @@ The above color theme is [Cobalt Neon](https://raw.githubusercontent.com/mbadola
 	1. Launch iTerm and type `p10k configure` for configuration, see [this gist](https://gist.github.com/kevin-smets/8568070) for theme
 	1. iTerm -> Preferences -> Appearance -> General -> Minimal
 1. Setup Dock
+1. Add the Raycast script commands by installing the [app](https://www.raycast.com/tholanda/script-commands) and following [https://github.com/raycast/script-commands](https://github.com/raycast/script-commands).
 
 ![dock](./img/dock.png)
 

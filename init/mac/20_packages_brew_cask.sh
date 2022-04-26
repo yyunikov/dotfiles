@@ -6,7 +6,6 @@ brew tap homebrew/cask
 
 brew install 1password
 #brew install avibrazil-rdm  # hack mac screen resolution
-brew install alfred
 brew install appcleaner
 brew install authy
 # brew install balenaetcher
@@ -32,6 +31,7 @@ brew install ngrok
 brew install osxfuse && brew install sshfs # file handling capabilities via third-party file systems
 brew install pycharm-ce # pycharm for paid edition
 # brew install rubymine # no community edition
+brew install raycast
 brew install signal
 brew install slack
 brew install sublime-text
