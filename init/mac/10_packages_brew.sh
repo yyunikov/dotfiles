@@ -51,7 +51,7 @@ brew install txn2/tap/kubefwd
 brew install maven
 brew install micro
 brew install mas
-brew install mtr
+brew install mtr # https://medium.com/macos-sh/mtr-my-traceroute-replacement-7827bd8efa42
 brew install nmap
 brew install nvm ; mkdir $HOME/.nvm
 brew install openssl
