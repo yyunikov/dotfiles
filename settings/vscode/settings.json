@@ -45,5 +45,5 @@
       "python.analysis.completeFunctionParens": true,
       "workbench.startupEditor": "none",
       "editor.rename.enablePreview": false,
-      "workbench.editor.enablePreview": false,
+      "workbench.editor.enablePreview": false
 }

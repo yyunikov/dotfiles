@@ -51,6 +51,7 @@ brew install txn2/tap/kubefwd
 brew install maven
 brew install micro
 brew install mas
+brew install mtr
 brew install nmap
 brew install nvm ; mkdir $HOME/.nvm
 brew install openssl
