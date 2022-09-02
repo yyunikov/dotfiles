@@ -30,6 +30,7 @@ brew install ngrok
 #brew install openoffice
 brew install osxfuse && brew install sshfs # file handling capabilities via third-party file systems
 brew install pycharm-ce # pycharm for paid edition
+brew install protonvpn
 # brew install rubymine # no community edition
 brew install raycast
 brew install signal
@@ -38,7 +39,8 @@ brew install sublime-text
 # brew install rectangle # window management app https://github.com/rxhanson/Rectangle
 brew install the-unarchiver
 brew install telegram
-#brew install tor-browser
+brew install tor
+brew install tor-browser
 #brew install tunnelbear
 #brew install tunnelblick
 #brew install virtualbox
