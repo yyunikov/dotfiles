@@ -53,3 +53,12 @@ brew install zoomus
 #cask install transmit # FTP client
 
 echo "DONE Installing homebrew cask packages."
+
+echo "Installing homebrew cockroach packages."
+
+brew tap cockroachdb/tap
+
+brew install cockroach
+brew install ccloud
+
+echo "DONE Installing homebrew cockroach packages."
