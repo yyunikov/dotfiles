@@ -21,7 +21,7 @@ alias kb="keybase"
 ### MAC
 if [[ "$OSTYPE" == "darwin"* ]]; then
     export DEFAULT_USER=${USER}
-    source /usr/local/etc/profile.d/z.sh
+    source /opt/homebrew/Cellar/z/1.9/etc/profile.d/z.sh
 
     # Predictable SSH authentication socket location.
     SOCK="$HOME/.ssh/agent_sock"

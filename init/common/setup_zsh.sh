@@ -6,3 +6,5 @@ if [ ! -d "$HOME/.oh-my-zsh/" ]; then
         mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
     fi
 fi
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/git/zsh-syntax-highlighting
