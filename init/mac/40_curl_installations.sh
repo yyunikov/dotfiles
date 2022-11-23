@@ -2,6 +2,9 @@
 
 echo "Installing apps from cURL."
 
+# poetry
+curl -sSL https://install.python-poetry.org | python3 -
+
 # sdkman
 curl -s "https://get.sdkman.io?rcupdate=false" | bash
 

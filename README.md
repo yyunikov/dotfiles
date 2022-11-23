@@ -39,6 +39,7 @@ The above color theme is [Cobalt Neon](https://raw.githubusercontent.com/mbadola
 	1. "Intellij IDEA"
 	1. "RubyMine"
 	1. "GoLand"
+1. Review all other system Keyboard Shortcuts and remove all unused
 1. Setup Input Sources
 1. Authenticate in all apps
 1. iTerm Configuration

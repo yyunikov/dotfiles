@@ -56,7 +56,6 @@ brew install nmap
 brew install nvm ; mkdir $HOME/.nvm
 brew install openssl
 # brew install packer # Tool for creating identical machine images for multiple platforms
-brew install poetry
 brew install postgresql
 brew install protobuf
 # brew install perl
