@@ -37,7 +37,13 @@ export GPG_TTY=$(tty)
 eval "$(direnv hook zsh)"
 
 # pyenv
-eval "$(pyenv init --path)"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Poetry
+export PATH="$HOME/.local/bin:$PATH"
 
 # rbenv
 eval "$(rbenv init - zsh)"
