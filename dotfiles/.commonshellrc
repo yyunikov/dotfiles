@@ -18,18 +18,22 @@ alias tcurl='curl -w "\n    time_namelookup:  %{time_namelookup}\n       time_co
 alias git-log='git log --date=short --pretty=format:"%C(124)%ad %C(24)%h %C(34)%an %C(252)%s%C(178)%d"'
 alias kb="keybase"
 
-### MAC
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    export DEFAULT_USER=${USER}
-    source /opt/homebrew/Cellar/z/1.9/etc/profile.d/z.sh
+  export DEFAULT_USER=${USER}
+  [ -f /opt/homebrew/Cellar/z/1.9/etc/profile.d/z.sh ] && source /opt/homebrew/Cellar/z/1.9/etc/profile.d/z.sh
 
-    # Predictable SSH authentication socket location.
-    SOCK="$HOME/.ssh/agent_sock"
-    AGENT_ENV="$HOME/.ssh/agent_env"
-    if ! ps -x | fgrep -v fgrep | fgrep -q $SOCK;
-    then
-        rm -f $SOCK
-        ssh-agent -a $SOCK > $AGENT_ENV
-    fi
-    eval $(cat $AGENT_ENV)
+  SOCK="$HOME/.ssh/agent_sock"
+  AGENT_ENV="$HOME/.ssh/agent_env"
+
+  # Check if ssh-agent is running by testing if socket is alive
+  if ! ssh-add -L &>/dev/null; then
+    rm -f $SOCK
+    ssh-agent -a $SOCK > $AGENT_ENV 2>/dev/null
+  fi
+
+  # Load ssh-agent environment quietly
+  if [ -f "$AGENT_ENV" ]; then
+    source "$AGENT_ENV" >/dev/null 2>&1
+  fi
 fi
+
