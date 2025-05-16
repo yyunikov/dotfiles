@@ -54,6 +54,7 @@ brew install mas
 brew install mtr # https://medium.com/macos-sh/mtr-my-traceroute-replacement-7827bd8efa42
 brew install nmap
 brew install nvm ; mkdir $HOME/.nvm
+brew install ollama
 brew install openssl
 # brew install packer # Tool for creating identical machine images for multiple platforms
 brew install postgresql
